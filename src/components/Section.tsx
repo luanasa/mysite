@@ -25,7 +25,7 @@ const Section = ({
           titleClassName
         )}>
           <span className="relative z-10">{title}</span>
-          <span className="absolute -bottom-1 left-1/2 transform -translate-x-1/2 h-3 w-24 bg-pastel-pink/50 rounded-full -z-0"></span>
+          <span className="absolute -bottom-1 left-1/2 transform -translate-x-1/2 h-3 w-24 bg-pastel-pink/50 dark:bg-primary/30 rounded-full -z-0"></span>
         </h2>
         {children}
       </div>
