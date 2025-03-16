@@ -4,6 +4,9 @@ Welcome to my professional site! This project shows my skills, and experiences i
 
 [Deploy ](https://luanasa-professionalsite-phi.vercel.app/) ☁️
 
+![image](https://github.com/user-attachments/assets/edac52d9-cb15-458a-beda-981aacaaf92e)
+
+
 ## Technologies Used
 
 - **Vite**: A fast and lightweight build tool for modern web development.
