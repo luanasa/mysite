@@ -114,7 +114,7 @@ const Index = () => {
             id="portfolio"
             title={<TranslatableText textKey="projects.project1.title" as="span" />}
             description={<TranslatableText textKey="projects.project1.description" as="span" />}
-            image="https://private-user-images.githubusercontent.com/38231334/424263913-c27c0dda-08b9-4fbb-a281-316ff836b781.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDIzNTA3NDQsIm5iZiI6MTc0MjM1MDQ0NCwicGF0aCI6Ii8zODIzMTMzNC80MjQyNjM5MTMtYzI3YzBkZGEtMDhiOS00ZmJiLWEyODEtMzE2ZmY4MzZiNzgxLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTAzMTklMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUwMzE5VDAyMTQwNFomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWJjOWMxMjQ2YTg0NzFhMDI2MGJmMzBmNDVhNzA1NzM5NTcyYTg5ZTk3OGUxZjJlNjNjMzM4ODU3MTZkNDE5ODMmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.1cFutTH7eQtciO0dwm7m4maV5SZ0TUIes6vsR2ZzDeo"
+            image="./portfolio-img.png"
             technologies={["HTML5", "CSS", "JS"]}
             deployUrl="https://luanasa.github.io/portfolio-lua/index.html"
             githubUrl="https://github.com/luanasa/portfolio-lua"
@@ -123,7 +123,7 @@ const Index = () => {
             id="chatbot"
             title={<TranslatableText textKey="projects.project2.title" as="span" />}
             description={<TranslatableText textKey="projects.project2.description" as="span" />}
-            image="https://private-user-images.githubusercontent.com/38231334/423245745-945dba09-63ca-4010-bee3-969825479a78.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDIzNTI0ODcsIm5iZiI6MTc0MjM1MjE4NywicGF0aCI6Ii8zODIzMTMzNC80MjMyNDU3NDUtOTQ1ZGJhMDktNjNjYS00MDEwLWJlZTMtOTY5ODI1NDc5YTc4LnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTAzMTklMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUwMzE5VDAyNDMwN1omWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTgxNWE5YjkyNjM5MWM4NzM0OGE1NjhmNGM4MWYwYThkYjAxY2ZjZTJiNjg2OGY0MWFlMzAzYzA5NDdmMmE3M2MmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.0UO0I10x59beJgXW-A3akiBRwoKbzKuh9LjcohTeSv0"
+            image="./cloudy.png"
             technologies={["Vite", "Tailwind", "TypeScript"]}
             deployUrl="https://ghibli-timer.vercel.app/"
             githubUrl="https://github.com/luanasa/cloudy-chatbot"
