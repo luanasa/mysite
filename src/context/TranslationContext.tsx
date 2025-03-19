@@ -75,6 +75,94 @@ const translations = {
     fr: "Mes Compétences",
     ko: "내 기술"
   },
+
+    // Projects section
+
+    'projects.title': {
+      en: "Projects",
+      pt: "Projetos",
+      es: "Proyectos",
+      fr: "Projets",
+      ko: "프로젝트"
+    },
+    'projects.subtitle': {
+      en: "Take a look at some of my recent projects",
+      pt: "Confira alguns dos meus projetos recentes",
+      es: "Echa un vistazo a algunos de mis proyectos recientes",
+      fr: "Découvrez certains de mes projets récents",
+      ko: "최근에 진행한 몇 가지 프로젝트를 살펴보세요"
+    },
+    'projects.view': {
+      en: "Live Demo",
+      pt: "Demonstração",
+      es: "Demostración",
+      fr: "Démo Live",
+      ko: "라이브 데모"
+    },
+    'projects.code': {
+      en: "View Code",
+      pt: "Ver Código",
+      es: "Ver Código",
+      fr: "Voir Code",
+      ko: "코드 보기"
+    },
+    'projects.project1.title': {
+      en: "Personal Portfolio",
+      pt: "Portfólio Pessoal",
+      es: "Portafolio Personal",
+      fr: "Portfolio Personnel",
+      ko: "개인 포트폴리오"
+    },
+    'projects.project1.description': {
+      en: "A minimalist, responsive, and easy-to-navigate portfolio designed to showcase my favorite projects.",
+      pt: "Um portfólio minimalista, responsivo e de fácil navegação, projetado para destacar meus projetos favoritos.",
+      es: "Un portafolio minimalista, responsivo y de fácil navegación, diseñado para destacar mis proyectos favoritos.",
+      fr: "Un portfolio minimaliste, réactif et facile à naviguer, conçu pour mettre en valeur mes projets favoris.",
+      ko: "미니멀하고 반응형이며 쉽게 탐색할 수 있는 포트폴리오로, 내가 가장 좋아하는 프로젝트를 돋보이게 합니다."
+    },
+    'projects.project2.title': {
+      en: "Cloudy The Chat",
+      pt: "Cloudy The Chat",
+      es: "Cloudy The Chat",
+      fr: "Cloudy The Chat",
+      ko: "Cloudy The Chat"
+    },
+    'projects.project2.description': {
+      en: "The Cloudy Chatbot uses AI to understand specific problems and provide relevant links, such as tutorials and documentation, organized by relevance or trusted source.",
+      pt: "O Cloudy Chatbot usa IA para entender problemas específicos e fornecer links relevantes, como tutoriais e documentações, organizados por relevância ou fonte confiável.",
+      es: "El Cloudy Chatbot utiliza IA para entender problemas específicos y proporcionar enlaces relevantes, como tutoriales y documentación, organizados por relevancia o fuente confiable.",
+      fr: "Le Cloudy Chatbot utilise l'IA pour comprendre des problèmes spécifiques et fournir des liens pertinents, tels que des tutoriels et de la documentation, organisés par pertinence ou source fiable.",
+      ko: "Cloudy Chatbot은 AI를 사용하여 특정 문제를 이해하고 관련 링크(예: 튜토리얼 및 문서)를 제공하며, 신뢰할 수 있는 출처나 관련성에 따라 정리합니다."
+    },
+    'projects.project3.title': {
+      en: "Ghibli Timer",
+      pt: "Ghibli Timer",
+      es: "Ghibli Timer",
+      fr: "Ghibli Timer",
+      ko: "지브리 타이머"
+    },
+    'projects.project3.description': {
+      en: "Just a simple ghibli inspired timer <3",
+      pt: "Apenas um simples timer inspirado no mundo mágico dos estudios Ghibli <3",
+      es: "Solo un simple temporizador inspirado en Ghibli <3",
+      fr: "Juste un simple minuteur inspiré par Ghibli <3",
+      ko: "그냥 간단한 지브리 영감을 받은 타이머 <3"
+    },
+    'projects.project4.title': {
+      en: "Totoro Tasker",
+      pt: "Totoro Tasker",
+      es: "Totoro Tasker",
+      fr: "Totoro Tasker",
+      ko: "토토로 태스크"
+    },
+    'projects.project4.description': {
+      en: "The Totoro Tasker project is a task management tool inspired by the whimsical nature of Studio Ghibli's Totoro. It helps users organize their tasks with an intuitive and playful interface. ",
+      pt: "Totoro Tasker é uma ferramenta de gerenciamento de tarefas inspirada na natureza lúdica de Totoro, da Studio Ghibli. Ele ajuda os usuários a organizar suas tarefas com uma interface intuitiva e divertida.",
+      es: "Totoro Tasker es una herramienta de gestión de tareas inspirada en la naturaleza juguetona de Totoro, de Studio Ghibli. Ayuda a los usuarios a organizar sus tareas con una interfaz intuitiva y divertida.",
+      fr: "Totoro Tasker est un outil de gestion de tâches inspiré par la nature ludique de Totoro, de Studio Ghibli. Il aide les utilisateurs à organiser leurs tâches avec une interface intuitive et ludique.",
+      ko: "토토로 태스크 프로젝트는 스튜디오 지브리의 토토로에서 영감을 받은 작업 관리 도구입니다. 사용자가 직관적이고 재미있는 인터페이스로 작업을 쉽게 조직할 수 있도록 돕습니다."
+    },
+
   // Experience section
   'experience.title': {
     en: "Experience & Education",
@@ -240,6 +328,8 @@ export const TranslationProvider = ({ children }: TranslationProviderProps) => {
   );
 };
 
+
+
 // Custom hook for using the translation context
 export const useTranslation = () => {
   const context = useContext(TranslationContext);
@@ -250,3 +340,5 @@ export const useTranslation = () => {
   
   return context;
 };
+
+
