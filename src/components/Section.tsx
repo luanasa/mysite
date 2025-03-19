@@ -3,29 +3,22 @@ import React from 'react';
 import { cn } from '@/lib/utils';
 
 interface SectionProps {
-  id: string;
-  title: string;
-  children: React.ReactNode;
+  id?: string;
+  title: React.ReactNode;
   className?: string;
-  titleClassName?: string;
+  children: React.ReactNode;
 }
 
-const Section = ({ 
-  id, 
-  title, 
-  children, 
-  className,
-  titleClassName
-}: SectionProps) => {
+const Section = ({ id, title, className, children }: SectionProps) => {
   return (
-    <section id={id} className={cn("cute-section", className)}>
+    <section 
+      id={id} 
+      className={cn("py-16 px-4", className)}
+    >
       <div className="container max-w-4xl mx-auto">
-        <h2 className={cn(
-          "font-quicksand font-bold text-2xl md:text-3xl mb-8 text-center relative",
-          titleClassName
-        )}>
+        <h2 className="text-center font-quicksand font-bold text-2xl md:text-3xl mb-10 relative">
           <span className="relative z-10">{title}</span>
-          <span className="absolute -bottom-1 left-1/2 transform -translate-x-1/2 h-3 w-24 bg-pastel-pink/50 dark:bg-primary/30 rounded-full -z-0"></span>
+          <span className="absolute inset-x-0 bottom-0 h-3 bg-pastel-lavender/30 -z-0 transform -translate-y-2"></span>
         </h2>
         {children}
       </div>

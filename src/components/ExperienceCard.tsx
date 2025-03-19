@@ -3,10 +3,10 @@ import React from 'react';
 import { cn } from '@/lib/utils';
 
 interface ExperienceCardProps {
-  title: string;
+  title: React.ReactNode;
   company: string;
   period: string;
-  description: string;
+  description: React.ReactNode;
   className?: string;
 }
 
