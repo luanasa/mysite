@@ -22,4 +22,5 @@ Welcome to my professional site! This project shows my skills, and experiences i
 - **Fast Performance**: Optimized with Vite for quick load times and smooth interactions.
 - **Type Safety**: Leverages TypeScript for robust and error-free code.
 - **Text-to-Speech**: Improved accessibility with a headphones button at the bottom-right of the screen. Click it to have the page content read aloud, with settings to adjust voice and speed.
-- **Theme Support**: Choose from three themes—light, dark, and system (which follows the user's system preferences). Toggle between light and dark modes using the button in the top-right corner.
+- **Theme Support**: Choose from three themes—light, dark, and system (which follow the user's system preferences). Toggle between light and dark modes using the button in the top-right corner.
+- **Automatic Language**: Detection & Translation: The website now detects the visitor's browser language and translates all content accordingly, ensuring semantic coherence. The translation system uses a context that provides translations for all text elements while preserving the original layout and structure of the page.
