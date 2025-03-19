@@ -132,7 +132,7 @@ const Index = () => {
             id="timer"
             title={<TranslatableText textKey="projects.project3.title" as="span" />}
             description={<TranslatableText textKey="projects.project3.description" as="span" />}
-            image="https://private-user-images.githubusercontent.com/38231334/423229486-5fae59f3-5ed1-40ce-bae7-12de58acb535.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDIzNTIxNTgsIm5iZiI6MTc0MjM1MTg1OCwicGF0aCI6Ii8zODIzMTMzNC80MjMyMjk0ODYtNWZhZTU5ZjMtNWVkMS00MGNlLWJhZTctMTJkZTU4YWNiNTM1LnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTAzMTklMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUwMzE5VDAyMzczOFomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWVhYjRlN2IwNmQ4ZWI4MTM3M2NiZWVmNWJiMDE4NDY1MDgxYjFkNDQ3MzYzYjI5ZDdlNmQwZGI5Nzc3ZWE5ZDMmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.oLCxJZHptsxuYWp4xPK4enAk6QHfUbejUyUR30hz9iY"
+            image="./timer.png"
             technologies={["React", "OpenWeather API", "CSS"]}
             deployUrl="https://ghibli-timer.vercel.app/"
             githubUrl="https://github.com/luanasa/ghibli-timer"
@@ -141,7 +141,7 @@ const Index = () => {
             id="task-manager"
             title={<TranslatableText textKey="projects.project4.title" as="span" />}
             description={<TranslatableText textKey="projects.project4.description" as="span" />}
-            image="https://private-user-images.githubusercontent.com/38231334/423256867-eaf1b45d-5110-441d-8f8f-3dc5c1710ed0.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDIzNTI1NzAsIm5iZiI6MTc0MjM1MjI3MCwicGF0aCI6Ii8zODIzMTMzNC80MjMyNTY4NjctZWFmMWI0NWQtNTExMC00NDFkLThmOGYtM2RjNWMxNzEwZWQwLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTAzMTklMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUwMzE5VDAyNDQzMFomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTVhNDQ1ODRhNmZkODQ1MGZlYTM2ZTcwZGQ4NmVjZjhkMjY2MzJlYWNlOWJmOTg3MDIyN2ViMWUyM2NmZTc2NzMmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.DGG87r9_X0cxrJetXnZt5AawVw7hiZiavZm0u4NpnDc"
+            image="./totoro.png"
             technologies={["React", "Tailwind", "Typescript"]}
             deployUrl="https://totoro-tasker.vercel.app/"
             githubUrl="https://github.com/luanasa/totoro-tasker"
