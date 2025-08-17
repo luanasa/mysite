@@ -149,19 +149,33 @@ const translations = {
       ko: "그냥 간단한 지브리 영감을 받은 타이머 <3"
     },
     'projects.project4.title': {
-      en: "Totoro Tasker",
-      pt: "Totoro Tasker",
-      es: "Totoro Tasker",
-      fr: "Totoro Tasker",
-      ko: "토토로 태스크"
+      en: "Vida+ App",
+      pt: "Vida+ App",
+      es: "Vida+ App",
+      fr: "Vida+ App",
+      ko: "Vida+ App"
     },
     'projects.project4.description': {
-      en: "The Totoro Tasker project is a task management tool inspired by the whimsical nature of Studio Ghibli's Totoro. It helps users organize their tasks with an intuitive and playful interface. ",
-      pt: "Totoro Tasker é uma ferramenta de gerenciamento de tarefas inspirada na natureza lúdica de Totoro, da Studio Ghibli. Ele ajuda os usuários a organizar suas tarefas com uma interface intuitiva e divertida.",
-      es: "Totoro Tasker es una herramienta de gestión de tareas inspirada en la naturaleza juguetona de Totoro, de Studio Ghibli. Ayuda a los usuarios a organizar sus tareas con una interfaz intuitiva y divertida.",
-      fr: "Totoro Tasker est un outil de gestion de tâches inspiré par la nature ludique de Totoro, de Studio Ghibli. Il aide les utilisateurs à organiser leurs tâches avec une interface intuitive et ludique.",
-      ko: "토토로 태스크 프로젝트는 스튜디오 지브리의 토토로에서 영감을 받은 작업 관리 도구입니다. 사용자가 직관적이고 재미있는 인터페이스로 작업을 쉽게 조직할 수 있도록 돕습니다."
+      en: "Vida+ is a preventive health app that helps you build healthy habits by tracking your sleep, stress, physical activity, and hydration. With smart alerts, wearable integration, and detailed reports, the app provides personalized suggestions to improve your quality of life.",
+      pt: "O Vida+ é um aplicativo de saúde preventiva que ajuda você a criar hábitos saudáveis através do acompanhamento de sono, estresse, atividade física e hidratação. Com alertas inteligentes, integração com wearables e relatórios detalhados, o app oferece sugestões personalizadas para melhorar sua qualidade de vida.",
+      es: "Vida+ es una aplicación de salud preventiva que te ayuda a crear hábitos saludables mediante el seguimiento de tu sueño, estrés, actividad física e hidratación. Con alertas inteligentes, integración con wearables e informes detallados, la aplicación ofrece sugerencias personalizadas para mejorar tu calidad de vida.",
+      fr: "Vida+ est une application de santé préventive qui vous aide à adopter des habitudes saines en suivant votre sommeil, votre stress, votre activité physique et votre hydratation. Avec des alertes intelligentes, une intégration aux objets connectés et des rapports détaillés, l'application fournit des suggestions personnalisées pour améliorer votre qualité de vie.",
+      ko: "Vida+는 수면, 스트레스, 신체 활동 및 수분 섭취를 추적하여 건강한 습관을 만들도록 도와주는 예방 건강 앱입니다. 스마트 알림, 웨어러블 연동, 상세 보고서를 통해 삶의 질을 향상시키기 위한 개인 맞춤형 제안을 제공합니다."
     },
+      'projects.project5.title': {
+        en: "Currency Converter",
+        pt: "Conversor de Moedas",
+        es: "Convertidor de Monedas",
+        fr: "Convertisseur de Devises",
+        ko: "환율 변환기"
+    },
+    'projects.project5.description': {
+      en: "A complete and elegant currency converter built with React, TypeScript, and Tailwind CSS, offering real-time conversion, historical charts, and an exceptional user experience.",
+      pt: "Um conversor de moedas completo e elegante construído com React, TypeScript e Tailwind CSS, oferecendo conversão em tempo real, gráficos históricos e uma experiência de usuário excepcional.",
+      es: "Un convertidor de monedas completo y elegante construido con React, TypeScript y Tailwind CSS, que ofrece conversión en tiempo real, gráficos históricos y una experiencia de usuario excepcional.",
+      fr: "Un convertisseur de devises complet et élégant construit avec React, TypeScript et Tailwind CSS, offrant une conversion en temps réel, des graphiques historiques et une expérience utilisateur exceptionnelle.",
+      ko: "React, TypeScript 및 Tailwind CSS로 구축된 완전하고 세련된 환율 변환기이며, 실시간 변환, 과거 차트 및 뛰어난 사용자 경험을 제공합니다."
+},
 
   // Experience section
   'experience.title': {

@@ -95,9 +95,9 @@ const Index = () => {
       {/* Skills Section */}
       <Section id="skills" title={<TranslatableText textKey="skills.title" />} className="bg-gradient-to-b from-white to-pastel-mint/30">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-          <SkillCard title="UI/UX" icon={PaintBucket} color="bg-pastel-pink" />
-          <SkillCard title="Frontend" icon={Code} color="bg-pastel-lavender" />
-          <SkillCard title="Backend" icon={Database} color="bg-pastel-blue" />
+          <SkillCard title="Web" icon={PaintBucket} color="bg-pastel-pink" />
+          <SkillCard title="Cloud" icon={Code} color="bg-pastel-lavender" />
+          <SkillCard title="Mobile" icon={Database} color="bg-pastel-blue" />
           <SkillCard title="IA" icon={Lightbulb} color="bg-pastel-yellow" />
         </div>
       </Section>
@@ -138,13 +138,22 @@ const Index = () => {
             githubUrl="https://github.com/luanasa/ghibli-timer"
           />
           <ProjectCard
-            id="task-manager"
+            id="vidamais"
             title={<TranslatableText textKey="projects.project4.title" as="span" />}
             description={<TranslatableText textKey="projects.project4.description" as="span" />}
-            image="./totoro.png"
+            image="./vidamais.png"
             technologies={["React", "Tailwind", "Typescript"]}
-            deployUrl="https://totoro-tasker.vercel.app/"
-            githubUrl="https://github.com/luanasa/totoro-tasker"
+            deployUrl="https://vidamaisapp-h9ak.vercel.app/"
+            githubUrl="https://github.com/luanasa/vidamaisapp"
+          />
+          <ProjectCard
+            id="conversordemoedas"
+            title={<TranslatableText textKey="projects.project5.title" as="span" />}
+            description={<TranslatableText textKey="projects.project5.description" as="span" />}
+            image="./conversor.png"
+            technologies={["React", "Tailwind", "Typescript"]}
+            deployUrl="https://conversor-de-moedas-lake.vercel.app/"
+            githubUrl="https://github.com/luanasa/conversor-de-moedas"
           />
         </div>
       </Section>
