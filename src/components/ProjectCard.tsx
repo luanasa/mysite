@@ -55,24 +55,26 @@ const ProjectCard = ({
       </CardContent>
       <CardFooter className="flex justify-between gap-2">
         {deployUrl && (
-          <Button 
-            variant="outline" 
-            className="flex-1 bg-pastel-pink hover:bg-pastel-pink/80 text-primary-foreground"
-            onClick={() => window.open(deployUrl, '_blank')}
-          >
-            <ExternalLink size={18} className="mr-2" />
-            <TranslatableText textKey="projects.view" />
-          </Button>
+          <a href={deployUrl} target="_blank" rel="noopener noreferrer" className="flex-1">
+            <Button 
+              variant="outline" 
+              className="w-full bg-pastel-pink hover:bg-pastel-pink/80 text-primary-foreground"
+            >
+              <ExternalLink size={18} className="mr-2" />
+              <TranslatableText textKey="projects.view" />
+            </Button>
+          </a>
         )}
         {githubUrl && (
-          <Button 
-            variant="outline" 
-            className="flex-1"
-            onClick={() => window.open(githubUrl, '_blank')}
-          >
-            <Github size={18} className="mr-2" />
-            <TranslatableText textKey="projects.code" />
-          </Button>
+          <a href={githubUrl} target="_blank" rel="noopener noreferrer" className="flex-1">
+            <Button 
+              variant="outline" 
+              className="w-full"
+            >
+              <Github size={18} className="mr-2" />
+              <TranslatableText textKey="projects.code" />
+            </Button>
+          </a>
         )}
       </CardFooter>
     </Card>
