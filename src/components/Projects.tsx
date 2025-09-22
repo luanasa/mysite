@@ -35,13 +35,21 @@ const Projects = () => {
       githubUrl: "https://github.com/luanasa/vidamaisapp",
     },
     {
-      title: "Conversor de Moedas Moderno",
-      subtitle: "Conversão de Moedas em Tempo Real",
-      description: "Um conversor de moedas completo e elegante, oferecendo conversão em tempo real, gráficos históricos e uma experiência de usuário excepcional.",
+      title: "Modern Currency Converter",
+      subtitle: "Real-Time Currency Conversion",
+      description: "A complete and elegant currency converter, offering real-time conversion, historical charts and an exceptional user experience.",
       tech: ["Tailwind", "React", "Typescript", "Chart.js", "Vite" ],
       liveUrl: "https://conversor-de-moedas-lake.vercel.app/",
       githubUrl: "https://github.com/luanasa/conversor-de-moedas",
-    }
+    },
+        {
+      title: "Online Invitation",
+      subtitle: "Online Invitation",
+      description: "A mini-site invitation for my birthday.",
+      tech: ["Vite", "Typescript", "Tailwind"],
+      liveUrl: "https://niver-luana.vercel.app/",
+      githubUrl: "https://github.com/luanasa/niver-luana",
+    },
   ];
 
   return (
