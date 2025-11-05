@@ -1,74 +1,102 @@
-import { useScrollAnimation } from '@/hooks/useScrollAnimation';
+import { Card } from "@/components/ui/card";
+import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
+import { Cloud, Code, Brain, BarChart3, User } from "lucide-react";
 
-const About = () => {
-  const { elementRef, className } = useScrollAnimation({ threshold: 0.2 });
+const skills = [
+  {
+    icon: Cloud,
+    title: "Cloud Engineering",
+    description:
+      "Designing and implementing scalable cloud infrastructure solutions",
+  },
+  {
+    icon: Code,
+    title: "Front-end Development",
+    description:
+      "Crafting intuitive and responsive user interfaces using modern frameworks like React and TypeScript",
+  },
+  {
+    icon: Brain,
+    title: "Artificial Intelligence",
+    description:
+      "Leveraging AI and machine learning to solve complex problems",
+  },
+  {
+    icon: BarChart3,
+    title: "Digital Marketing",
+    description:
+      "Developing strategies that combine storytelling, design, and data to build meaningful brands and attract audiences",
+  },
+];
 
+export const About = () => {
   return (
-    <section ref={elementRef} id="about" className={`py-32 ${className}`}>
-      <div className="max-w-6xl mx-auto px-6">
-        <div className="grid lg:grid-cols-12 gap-16 items-start">
-          <div className="lg:col-span-8 animate-fade-up">
-            <h2 className="text-4xl md:text-6xl font-black mb-12">
-              About me<span className="text-accent">.</span>
-            </h2>
-            
-            <div className="space-y-8 text-lg text-text-light leading-relaxed">
-              <p>
-                Hello! I'm a creative professional with a deep passion for crafting 
-                stunning designs and writing clean, efficient code. When I'm not 
-                immersed in creating great digital experiences, you can find me 
-                exploring my artistic side through crocheting, sculpting ceramics, 
-                or enjoying cozy moments with my cats.
-              </p>
-              
-              <p>
-                I believe in creating work that's not just functional but also brings 
-                a smile to people's faces. That's why I love incorporating playful 
-                elements into my professional projects.
-              </p>
-              
-              <blockquote className="border-l-4 border-accent pl-8 py-4 italic text-foreground font-medium text-xl bg-surface-subtle rounded-r-lg">
-                "Creativity is where aesthetics meet purpose—turning ideas into 
-                experiences that are not only visually captivating but also 
-                intuitively functional."
-              </blockquote>
-            </div>
-          </div>
-          
-          <div className="lg:col-span-4 animate-fade-up lg:animate-slide-in">
-            <div className="space-y-8">
-              {/* Skills showcase */}
-              <div className="bg-surface-subtle p-8 rounded-lg">
-                <h3 className="text-2xl font-bold mb-6">Focus Areas</h3>
+    <section id="about" className="py-20 relative">
+      <div className="absolute inset-0 bg-gradient-to-b from-transparent via-primary/5 to-transparent" />
+
+      <div className="container mx-auto px-4 relative z-10">
+        {/* Título */}
+        <div className="text-center mb-12">
+          <h2 className="text-4xl md:text-5xl font-bold mb-4">
+            About <span className="text-gradient">me.</span>
+          </h2>
+          <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
+            Passionate about creating digital experiences that make a difference.
+          </p>
+        </div>
+
+        {/* Cards de habilidades */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          {skills.map((skill, index) => {
+            const Icon = skill.icon;
+            return (
+              <Card
+                key={index}
+                className="bg-card/50 backdrop-blur-sm border-border p-6 card-hover group"
+              >
                 <div className="space-y-4">
-                  {[
-                    "Cloud Engineering",
-                    "AI & Machine Learning", 
-                    "Web Development",
-                    "Mobile Apps"
-                  ].map((skill, index) => (
-                    <div key={skill} className="flex items-center gap-3">
-                      <div className="w-2 h-2 bg-accent rounded-full" />
-                      <span className="text-text-light">{skill}</span>
-                    </div>
-                  ))}
+                  <div className="w-12 h-12 rounded-lg bg-gradient-primary flex items-center justify-center group-hover:shadow-glow transition-all duration-300">
+                    <Icon className="w-6 h-6 text-primary-foreground" />
+                  </div>
+                  <h3 className="text-xl font-bold group-hover:text-primary transition-colors duration-300">
+                    {skill.title}
+                  </h3>
+                  <p className="text-muted-foreground text-sm">
+                    {skill.description}
+                  </p>
                 </div>
-              </div>
-              
-              {/* Current status */}
-              <div className="bg-surface-subtle p-8 rounded-lg">
-                <h3 className="text-2xl font-bold mb-4">Currently</h3>
-                <p className="text-text-light">
-                  Cloud Engineer | Software Developer | IA | Power BI and exploring 
-                  the fascinating intersection of cloud computing and artificial intelligence.
-                </p>
-              </div>
+              </Card>
+            );
+          })}
+        </div>
+
+        {/* Seção de bio com avatar */}
+        <div className="mt-16 max-w-3xl mx-auto">
+          <Card className="bg-card/50 backdrop-blur-sm border-border p-8">
+            <div className="flex flex-col md:flex-row gap-8 items-center">
+              <Avatar className="size-40 shrink-0 rounded-full overflow-hidden border-4 border-primary/20">
+                <AvatarImage
+                  src="/luana-profile.jpeg"
+                  alt="Luana Sá Martins"
+                  className="w-full h-full object-cover object-center"
+                />
+                <AvatarFallback className="bg-gradient-primary">
+                  <User className="w-10 h-10 text-primary-foreground" />
+                </AvatarFallback>
+              </Avatar>
+
+              <p className="text-foreground text-lg leading-relaxed flex-1">
+                Since 2021, I’ve been crafting digital experiences that bridge design,
+                content, and technology. My work blends front-end development, UX
+                writing, and digital strategy — transforming ideas into intuitive,
+                human-centered interfaces. I believe every pixel and every word has the
+                power to guide, inspire, and create meaningful connections between
+                brands and people.
+              </p>
             </div>
-          </div>
+          </Card>
         </div>
       </div>
     </section>
   );
 };
-
-export default About;

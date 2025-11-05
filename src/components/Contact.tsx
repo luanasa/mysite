@@ -1,106 +1,88 @@
 import { Button } from "@/components/ui/button";
-import { Mail, Github, Linkedin, Heart, ArrowUpRight } from "lucide-react";
-import { useScrollAnimation } from '@/hooks/useScrollAnimation';
+import { Card } from "@/components/ui/card";
+import { Mail, Github, Linkedin, Send } from "lucide-react";
 
-const Contact = () => {
-  const { elementRef, className } = useScrollAnimation({ threshold: 0.2 });
-
+export const Contact = () => {
   return (
-    <section ref={elementRef} id="contact" className={`py-32 ${className}`}>
-      <div className="max-w-6xl mx-auto px-6">
-        <div className="animate-fade-up">
-          <h2 className="text-4xl md:text-6xl font-black mb-12">
-            Let's work together<span className="text-accent">.</span>
+    <section id="contact" className="py-20 relative">
+      <div className="container mx-auto px-4">
+        <div className="text-center mb-12">
+          <h2 className="text-4xl md:text-5xl font-bold mb-4">
+            Get in <span className="text-gradient">touch.</span>
           </h2>
-          
-          <div className="grid lg:grid-cols-2 gap-16">
+          <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
+            I'm always open to discussing new projects, creative ideas, or opportunities to be part of your visions.
+          </p>
+        </div>
+
+        <div className="max-w-4xl mx-auto">
+          <Card className="bg-card/50 backdrop-blur-sm border-border p-8 md:p-12">
             <div className="space-y-8">
-              <p className="text-xl text-text-light leading-relaxed">
-                Ready to bring your ideas to life? I'd love to hear about your project 
-                and explore how we can create something amazing together.
-              </p>
-              
-              <div className="space-y-6">
-                <a 
-                  href="mailto:luamartinstravel@gmail.com"
-                  className="flex items-center gap-4 group hover:text-accent transition-smooth"
+              {/* Contact Options */}
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+                <Button
+                  variant="glass"
+                  size="lg"
+                  className="h-auto py-6 flex-col gap-3"
+                  asChild
                 >
-                  <div className="w-12 h-12 bg-surface-subtle rounded-full flex items-center justify-center group-hover:bg-accent group-hover:text-accent-foreground transition-smooth">
-                    <Mail className="w-5 h-5" />
-                  </div>
-                  <div>
-                    <div className="text-sm text-text-light">Email</div>
-                    <div className="font-medium">luamartinstravel@gmail.com</div>
-                  </div>
-                  <ArrowUpRight className="w-4 h-4 opacity-0 group-hover:opacity-100 transition-smooth" />
-                </a>
-                
-                <a 
-                  href="https://github.com/luanasa"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center gap-4 group hover:text-accent transition-smooth"
+                  <a href="mailto:luamartinstravel@gmail.com">
+                    <Mail className="w-8 h-8" />
+                    <div className="text-center">
+                      <div className="font-semibold">Email</div>
+                      <div className="text-xs text-muted-foreground">Send a message</div>
+                    </div>
+                  </a>
+                </Button>
+
+                <Button
+                  variant="glass"
+                  size="lg"
+                  className="h-auto py-6 flex-col gap-3"
+                  asChild
                 >
-                  <div className="w-12 h-12 bg-surface-subtle rounded-full flex items-center justify-center group-hover:bg-accent group-hover:text-accent-foreground transition-smooth">
-                    <Github className="w-5 h-5" />
-                  </div>
-                  <div>
-                    <div className="text-sm text-text-light">GitHub</div>
-                    <div className="font-medium">@luanasa</div>
-                  </div>
-                  <ArrowUpRight className="w-4 h-4 opacity-0 group-hover:opacity-100 transition-smooth" />
-                </a>
-                
-                <a 
-                  href="https://www.linkedin.com/in/luamartins/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center gap-4 group hover:text-accent transition-smooth"
+                  <a href="https://github.com/luanasa" target="_blank" rel="noopener noreferrer">
+                    <Github className="w-8 h-8" />
+                    <div className="text-center">
+                      <div className="font-semibold">GitHub</div>
+                      <div className="text-xs text-muted-foreground">Check my code</div>
+                    </div>
+                  </a>
+                </Button>
+
+                <Button
+                  variant="glass"
+                  size="lg"
+                  className="h-auto py-6 flex-col gap-3"
+                  asChild
                 >
-                  <div className="w-12 h-12 bg-surface-subtle rounded-full flex items-center justify-center group-hover:bg-accent group-hover:text-accent-foreground transition-smooth">
-                    <Linkedin className="w-5 h-5" />
-                  </div>
-                  <div>
-                    <div className="text-sm text-text-light">LinkedIn</div>
-                    <div className="font-medium">Luana Martins</div>
-                  </div>
-                  <ArrowUpRight className="w-4 h-4 opacity-0 group-hover:opacity-100 transition-smooth" />
-                </a>
+                  <a href="https://www.linkedin.com/in/luamartins/" target="_blank" rel="noopener noreferrer">
+                    <Linkedin className="w-8 h-8" />
+                    <div className="text-center">
+                      <div className="font-semibold">LinkedIn</div>
+                      <div className="text-xs text-muted-foreground">Let's connect</div>
+                    </div>
+                  </a>
+                </Button>
+              </div>
+
+              {/* CTA */}
+              <div className="text-center space-y-4 pt-8 border-t border-border">
+                <h3 className="text-2xl font-bold">Ready to start a project?</h3>
+                <p className="text-muted-foreground">
+                  Let's collaborate and create something amazing together.
+                </p>
+                <Button variant="hero" size="lg" asChild>
+                  <a href="mailto:luamartinstravel@gmail.com">
+                    <Send className="w-5 h-5" />
+                    Start a conversation
+                  </a>
+                </Button>
               </div>
             </div>
-            
-            <div className="bg-surface-subtle p-8 rounded-lg">
-              <h3 className="text-2xl font-bold mb-6">Get in touch</h3>
-              <p className="text-text-light mb-8">
-                Whether you have a project in mind, want to collaborate, or just 
-                want to say hello, I'd love to hear from you.
-              </p>
-              
-              <Button 
-                size="lg" 
-                className="w-full bg-accent hover:bg-accent/90 text-accent-foreground font-semibold"
-                onClick={() => window.open('mailto:luamartinstravel@gmail.com')}
-              >
-                Send me an email
-                <ArrowUpRight className="ml-2 h-4 w-4" />
-              </Button>
-            </div>
-          </div>
-        </div>
-        
-        <div className="border-t border-border mt-24 pt-12 animate-fade-in">
-          <div className="flex flex-col md:flex-row justify-between items-center gap-4">
-            <p className="text-text-light flex items-center gap-2">
-              Made with <Heart className="w-4 h-4 text-accent" /> by Luana Martins
-            </p>
-            <p className="text-text-light text-sm">
-              © 2025 — Designed & Built with care
-            </p>
-          </div>
+          </Card>
         </div>
       </div>
     </section>
   );
 };
-
-export default Contact;
